@@ -1,7 +1,12 @@
-import React from "react";
+import styled from "styled-components";
 
 const Home = () => {
-  return <div>세상에 이런 폰트가 나오다니 천재인듯</div>;
+  return (
+    <HomeStyle>
+      <h1>Home body</h1>
+    </HomeStyle>
+  );
 };
 
+const HomeStyle = styled.div``;
 export default Home;
