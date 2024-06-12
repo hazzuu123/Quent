@@ -10,12 +10,12 @@ import store from "./store";
 const routeList = [
   {
     path: "/",
-    element: <Home />,
+    element: <Home />
   },
   {
     path: "/login",
-    element: <Login />,
-  },
+    element: <Login />
+  }
 ];
 
 const router = createBrowserRouter(
@@ -23,7 +23,7 @@ const router = createBrowserRouter(
     return {
       ...route,
       element: <Layout>{route.element}</Layout>,
-      errorElement: <main>에러 페이지 구현 예정</main>,
+      errorElement: <main>에러 페이지 구현 예정</main>
     };
   })
 );
