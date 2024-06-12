@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import theme from "./theme";
 
 const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
@@ -8,9 +7,15 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "Pretendard";
-        font-size: ${theme.fontSize.B2};
         font-weight: 400;
+        color: ${({ theme }) => theme.color.gray10};
+        margin: 0;
+    } 
+    h1 {
+        margin: 0;
     }
+
+    
 `;
 
 export default GlobalStyle;
