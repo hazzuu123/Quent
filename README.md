@@ -30,67 +30,46 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 ```
-React-Quant
-├─ .eslintrc.cjs
-├─ .git
-│  ├─ config
-│  ├─ description
-│  ├─ FETCH_HEAD
-│  ├─ HEAD
-│  ├─ hooks
-│  │  ├─ applypatch-msg.sample
-│  │  ├─ commit-msg.sample
-│  │  ├─ fsmonitor-watchman.sample
-│  │  ├─ post-update.sample
-│  │  ├─ pre-applypatch.sample
-│  │  ├─ pre-commit.sample
-│  │  ├─ pre-merge-commit.sample
-│  │  ├─ pre-push.sample
-│  │  ├─ pre-rebase.sample
-│  │  ├─ pre-receive.sample
-│  │  ├─ prepare-commit-msg.sample
-│  │  ├─ push-to-checkout.sample
-│  │  ├─ sendemail-validate.sample
-│  │  └─ update.sample
-│  ├─ info
-│  │  └─ exclude
-│  ├─ objects
-│  │  ├─ info
-│  │  └─ pack
-│  └─ refs
-│     ├─ heads
-│     └─ tags
-├─ .gitignore
-├─ index.html
-├─ package-lock.json
-├─ package.json
-├─ public
-│  └─ vite.svg
-├─ README.md
-├─ src
-│  ├─ api
-│  ├─ App.tsx
-│  ├─ assets
-│  │  └─ fonts
-│  │     ├─ Pretendard-Bold.woff2
-│  │     ├─ Pretendard-Medium.woff2
-│  │     └─ Pretendard-Regular.woff2
-│  ├─ components
-│  │  ├─ common
-│  │  └─ layout
-│  │     └─ Layout.tsx
-│  ├─ hooks
-│  ├─ main.tsx
-│  ├─ pages
-│  │  └─ Home.tsx
-│  ├─ style
-│  │  ├─ font.ts
-│  │  ├─ global.ts
-│  │  └─ theme.ts
-│  ├─ utils
-│  └─ vite-env.d.ts
-├─ tsconfig.json
-├─ tsconfig.node.json
-└─ vite.config.ts
+📦src
+ ┣ 📂api
+ ┃ ┗ 📜queryClient.ts
+ ┣ 📂assets
+ ┃ ┗ 📂fonts
+ ┃ ┃ ┣ 📜Pretendard-Bold.woff2
+ ┃ ┃ ┣ 📜Pretendard-Medium.woff2
+ ┃ ┃ ┗ 📜Pretendard-Regular.woff2
+ ┣ 📂components
+ ┃ ┣ 📂common
+ ┃ ┃ ┗ 📜a.txt
+ ┃ ┣ 📂layout
+ ┃ ┃ ┗ 📜Layout.tsx
+ ┃ ┗ 📂oauth
+ ┃ ┃ ┣ 📜Google.tsx
+ ┃ ┃ ┗ 📜Naver.tsx
+ ┣ 📂constants
+ ┃ ┗ 📜a.txt
+ ┣ 📂hooks
+ ┃ ┣ 📜a.txt
+ ┃ ┗ 📜redux.ts
+ ┣ 📂models
+ ┃ ┗ 📜a.txt
+ ┣ 📂pages
+ ┃ ┣ 📜Home.tsx
+ ┃ ┗ 📜Login.tsx
+ ┣ 📂store
+ ┃ ┣ 📂reducer
+ ┃ ┃ ┗ 📜reducer.ts
+ ┃ ┣ 📂slices
+ ┃ ┃ ┗ 📜modalSlice.ts
+ ┃ ┗ 📜index.ts
+ ┣ 📂style
+ ┃ ┣ 📜font.ts
+ ┃ ┣ 📜global.ts
+ ┃ ┗ 📜theme.ts
+ ┣ 📂utils
+ ┃ ┗ 📜format.ts
+ ┣ 📜App.tsx
+ ┣ 📜main.tsx
+ ┗ 📜vite-env.d.ts
 
 ```
